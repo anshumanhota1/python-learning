@@ -1,0 +1,6 @@
+requests==2.31.0
+flask==3.0.0
+
+PS C:\Users\anshuman.hota\OneDrive - Accenture\Desktop\python-learning\01_virtual> python3 -m venv .venv
+PS C:\Users\anshuman.hota\OneDrive - Accenture\Desktop\python-learning\01_virtual> .\.venv\Scripts\activate
+(.venv) PS C:\Users\anshuman.hota\OneDrive - Accenture\Desktop\python-learning\01_virtual> pip install -r .\requirement.txt
