@@ -1,28 +1,30 @@
-# Boolean data type in Python
-# Booleans are either True or False.
+# Python Booleans - Learning Notes
+# A boolean value is either True or False.
+# Booleans are used for decisions and conditions.
 
-# 1. Boolean values can be used with arithmetic in Python
-is_boiling = True
-steps_count = 5
+# Example 1: Boolean values used in arithmetic
+# In Python, True behaves like 1 and False behaves like 0.
+is_boiling = True  # Store the boolean value True.
+steps_count = 5  # Store the integer value 5.
 
-# Python converts True to 1 and False to 0 in arithmetic
-# This is called boolean-to-integer conversion.
-total_actions = steps_count + is_boiling
-print(f"Total actions: {total_actions}")
+total_actions = steps_count + is_boiling  # Add 5 and True, which acts like 1.
+print(f"Total actions: {total_actions}")  # Print the result of the arithmetic.
 
-# 2. Using bool() to check truthiness
-# 0 is considered False, and any non-zero value is considered True.
-milk_present = 0  # no milk
-print(f"Is there milk? {bool(milk_present)}")
+# Example 2: Using bool() to check truthiness
+# 0 is False, and any non-zero number is True.
+milk_present = 0  # Store 0 to represent no milk.
+print(f"Is there milk? {bool(milk_present)}")  # Convert 0 to a boolean value.
 
-# 3. Logical AND
-water_hot = True
-tea_added = True
+# Example 3: Logical AND
+# The 'and' operator returns True only when both values are True.
+water_hot = True  # Water is hot.
+tea_added = True  # Tea has been added.
 
-can_serve_chai = water_hot and tea_added
-print(f"Can serve chai? {can_serve_chai}")
+can_serve_chai = water_hot and tea_added  # Both conditions must be True to serve tea.
+print(f"Can serve chai? {can_serve_chai}")  # Print the result of the condition.
 
-# Note:
-# - True and True -> True
-# - True and False -> False
-# - False and anything -> False
+# Summary:
+# - Booleans are True or False.
+# - bool(0) is False.
+# - bool(non-zero) is True.
+# - A and B is True only if both are True.

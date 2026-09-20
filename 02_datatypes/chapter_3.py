@@ -1,45 +1,55 @@
-# Integer arithmetic in Python
-# These are basic arithmetic operations using integers.
+# Python Integer Arithmetic - Learning Notes
+# Integers are whole numbers. Python supports many arithmetic operations on them.
 
-# 1. Addition
-black_tea_grams = 14
-ginger_grams = 3
+# Example 1: Addition
+black_tea_grams = 14  # Store the first integer value.
+ginger_grams = 3  # Store the second integer value.
 
-total_grams = black_tea_grams + ginger_grams
-print(f"Total grams of tea base: {total_grams} g")
+total_grams = black_tea_grams + ginger_grams  # Add both numbers together.
+print(f"Total grams of tea base: {total_grams} g")  # Print the sum.
 
-# 2. Subtraction
-remaining_tea = black_tea_grams - ginger_grams
-print(f"Remaining tea after subtraction: {remaining_tea} g")
+# Example 2: Subtraction
+remaining_tea = black_tea_grams - ginger_grams  # Subtract ginger from black tea.
+print(f"Remaining tea after subtraction: {remaining_tea} g")  # Print the result.
 
-# 3. Division
-milk_litres = 7
-servings = 4
-milk_per_serving = milk_litres / servings
-print(f"Milk per serving: {milk_per_serving} litres")
+# Example 3: Division
+# / gives a floating-point result.
+milk_litres = 7  # Store the total milk in litres.
+servings = 4  # Number of servings.
+milk_per_serving = milk_litres / servings  # Divide milk by number of servings.
+print(f"Milk per serving: {milk_per_serving} litres")  # Print the float result.
 
-# 4. Floor division
-# It gives the whole-number quotient without the decimal part.
-total_tea_bags = 7
-pots = 4
-bags_per_pot = total_tea_bags // pots
-print(f"Tea bags per pot: {bags_per_pot}")
+# Example 4: Floor division
+# // gives only the whole-number part.
+total_tea_bags = 7  # Total tea bags available.
+pots = 4  # Number of pots.
+bags_per_pot = total_tea_bags // pots  # Divide and keep only the whole number.
+print(f"Tea bags per pot: {bags_per_pot}")  # Print the integer result.
 
-# 5. Modulus
-# It gives the remainder after division.
-total_cadamom_pods = 10
-pods_per_cup = 3
-leftover_pods = total_cadamom_pods % pods_per_cup
-print(f"Leftover cardamom pods: {leftover_pods}")
+# Example 5: Modulus
+# % gives the remainder after division.
+total_cadamom_pods = 10  # Total number of cardamom pods.
+pods_per_cup = 3  # Pods that fit in one cup.
+leftover_pods = total_cadamom_pods % pods_per_cup  # Check the remainder after division.
+print(f"Leftover cardamom pods: {leftover_pods}")  # Print the remainder.
 
-# 6. Exponentiation
-base_flavor_strength = 2
-scale_factor = 3
-powerful_flavour = base_flavor_strength ** scale_factor
-print(f"Scaled flavour strength: {powerful_flavour}")
+# Example 6: Exponentiation
+# ** means power.
+base_flavor_strength = 2  # Base value.
+scale_factor = 3  # Power to apply.
+powerful_flavour = base_flavor_strength ** scale_factor  # Raise base to the given power.
+print(f"Scaled flavour strength: {powerful_flavour}")  # Print the result.
 # 2 * 2 * 2 = 8
 
-# 7. Numeric separators for readability
-# Python allows underscores in large numbers.
-total_tea_leaves_harvested = 1_000_000_000
-print(f"Total tea leaves harvested: {total_tea_leaves_harvested}")
+# Example 7: Numeric separators
+# Underscores make large numbers easier to read.
+total_tea_leaves_harvested = 1_000_000_000  # Large number written in a readable form.
+print(f"Total tea leaves harvested: {total_tea_leaves_harvested}")  # Print the value.
+
+# Summary:
+# + adds numbers
+# - subtracts numbers
+# / divides and returns float
+# // divides and returns integer part
+# % gives the remainder
+# ** raises a number to a power
